@@ -26,8 +26,9 @@ book_rating = data.get("df", pd.DataFrame())
 books = data.get("books", pd.DataFrame())
 
 
+Users = pd.read_csv("C:/Users/lenov/OneDrive/Desktop/BookRecommendationProject/datasets/Users.csv")
 
-Users = pd.read_csv('users.csv')  
+#Users = pd.read_csv('Users.csv')  
 with open('users.pkl', 'wb') as h:  
     pickle.dump(Users, h)
 
